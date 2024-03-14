@@ -43,7 +43,7 @@ fn copy_files(source: &Path, destination: &Path) -> io::Result<()> {
         let mut choice = String::new();
         io::stdin()
             .read_line(&mut choice)
-            .expect("Failed to read input");
+            .expect("Failed to read input.");
         let choice = choice.trim();
 
         match choice {
